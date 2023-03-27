@@ -1,0 +1,64 @@
+.navbar{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin: 20px 0px 0px 0px;
+  padding: 20px 0px;
+  min-height: 200px;
+}
+
+.logo {
+  font-size: 70px;
+}
+
+.linksContainer{
+  margin: 20px 0px 0px 0px;
+  height: fit-content;
+}
+
+.linksContainer > *{
+  margin: 0px 30px 0px 0px;
+  font-size: 30px;
+}
+
+.nav-links {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+
+.linksContainer > :hover,
+.activeLink
+{
+  border-bottom: 3px solid black;
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+  .logo{
+    font-size: 50px;
+  }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+  .linksContainer > *{
+    margin: 0px 5px;
+    font-size: 20px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
