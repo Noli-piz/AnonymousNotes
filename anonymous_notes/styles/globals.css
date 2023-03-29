@@ -126,7 +126,8 @@ a {
   flex-direction: column;
   width: 600px;
   min-width: 600px;
-  min-height: 400px;
+  min-height: 300px;
+  max-height: 500px;
   padding: 20px;
   background-color: honeydew;
 }
